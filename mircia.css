@@ -13,3 +13,16 @@
   width: 710px;
   height: auto;
 }
+
+
+
+
+/* Common
+*/
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
