@@ -1,0 +1,15 @@
+
+.container {
+  margin: 0 auto;
+  width: 950px;
+  overflow: hidden;  
+}
+
+#header #category {
+  width: 20%;
+}
+
+.image img {
+  width: 710px;
+  height: auto;
+}
