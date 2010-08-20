@@ -5,7 +5,7 @@
   overflow: hidden;  
 }
 
-#header #category {
+#header #category, #category #thumb {
   width: 20%;
 }
 

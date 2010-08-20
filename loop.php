@@ -38,32 +38,18 @@
 	</div><!-- #post-0 -->
 <?php endif; ?>
 
-<?php
-	/* Start the Loop.
-	 *
-	 * In Twenty Ten we use the same loop in multiple contexts.
-	 * It is broken into three main parts: when we're displaying
-	 * posts that are in the gallery category, when we're displaying
-	 * posts in the asides category, and finally all other posts.
-	 *
-	 * Additionally, we sometimes check for whether we are on an
-	 * archive page, a search page, etc., allowing for small differences
-	 * in the loop on each template without actually duplicating
-	 * the rest of the loop that is shared.
-	 *
-	 * Without further ado, the loop:
-	 */ ?>
+
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts in the Gallery category. */ ?>
   
-  <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="entry-content">
-      <a href="<?php the_permalink(); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">        
-				<img src="<?php echo post_image($post->ID); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" />
-      </a>
-    </div>
+  
+  <div id="thumb" class="column span-5 last">
+    <a href="<?php the_permalink(); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">        
+			<img src="<?php echo post_image($post->ID); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" />
+    </a>
   </div>
+  
 	
 
 <?php endwhile; // End the loop. Whew. ?>
