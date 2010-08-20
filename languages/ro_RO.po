@@ -306,7 +306,7 @@ msgstr ""
 
 #: header.php:71
 msgid "Skip to content"
-msgstr ""
+msgstr "Detalii &rarr;"
 
 #: loop.php:25
 #: loop.php:172
