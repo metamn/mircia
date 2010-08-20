@@ -9,12 +9,27 @@
   width: 20%;
 }
 
+/* Startpage
+*/
+
 .image img {
   width: 710px;
   height: auto;
 }
 
-
+/* Single
+*/
+#info {
+  display: none;
+  position: relative;
+  top: -2.4em;
+  height: 2em;
+  background: white;
+}
+#info #category ul.post-categories {
+  list-style-type: none;
+  margin: 0;
+}
 
 
 /* Common

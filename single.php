@@ -20,6 +20,17 @@ get_header(); ?>
 
     <div id="image">
       <img src="<?php echo post_image($post->ID, 'large'); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" />
+    </div>
+    <div id="info">
+      <div id="title" class="column span-8 last"><?php the_title()?></div>
+      <div id="category" class="column span-8 last"><?php the_category()?></div>
+      <div id="date" class="column span-6 last"><?php the_date('j F Y')?></div>
+      <div id="navigation" class="column span-2 last">
+        <?php 
+          previous_post_link('%link', '&larr;', true);
+          next_post_link('%link', '&rarr;', true);
+        ?>
+      </div>
     </div>		
 
 		<div id="nav-below" class="navigation">
