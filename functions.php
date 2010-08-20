@@ -1,5 +1,15 @@
 <?php
 
+
+// Get next or prev link for post
+function post_link($id) {
+  $p = get_previous_post(true); 
+  if (!($p->guid)) {
+    $p = get_next_post(true);    
+  }
+  return $p->guid;		
+}
+
 // Get post image
 function post_image($id, $size='thumbnail') {
   $imgs = post_attachements($id);
