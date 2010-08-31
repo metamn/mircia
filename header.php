@@ -59,7 +59,7 @@
 	      $descr = $c->description; ?>	       
 	      <div id="category" class="column span-5 last">
 	        <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
-	        <?php //get_cat_icon('cat='.$c->term_id); ?>
+	        <?php get_cat_icon('cat='.$c->term_id); ?>
 	        <?php echo $c->name; ?>
 	        </a>
 	      </div>

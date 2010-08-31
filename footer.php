@@ -14,12 +14,11 @@
 
 <div id="footer" class="column span-24 last">
   <div class="alignleft">
-			&copy; 2010 Mircia Dumitrescu.
-			<br/>
-			<a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">Pagina principala</a>
+			&copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>
   </div>
   <div class="alignright">
-		Creat de <a href="http://clair.ro">clair.ro</a> cu <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">WordPress</a>
+    <a href="<?php bloginfo('home')?>/despre-mircia" alt="Contact" title="Contact">Contact</a> &bull; 
+    <a href="http://clair.ro/mircia">Credite</a>		
 	</div>
 </div>
 
