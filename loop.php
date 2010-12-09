@@ -27,6 +27,12 @@
 	</div><!-- #nav-above -->
 <?php endif; ?>
 
+
+<div id="thumb" class="column span-5 last category-title">
+  <h1><?php echo single_cat_title('', false); ?></h1>    
+</div>
+
+
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 	<div id="post-0" class="post error404 not-found">
@@ -37,6 +43,7 @@
 		</div><!-- .entry-content -->
 	</div><!-- #post-0 -->
 <?php endif; ?>
+
 
 
 <?php while ( have_posts() ) : the_post(); ?>

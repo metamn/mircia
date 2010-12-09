@@ -19,6 +19,7 @@
 	 * twentyten_filter_wp_title() in functions.php.
 	 */
 	wp_title( '|', true, 'right' );
+	bloginfo('name');
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />

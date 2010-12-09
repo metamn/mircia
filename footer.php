@@ -18,7 +18,7 @@
   </div>
   <div class="alignright">
     <a href="<?php bloginfo('home')?>/despre-mircia" alt="Contact" title="Contact">Contact</a> &bull; 
-    <a href="http://clair.ro/mircia">Credite</a>		
+    <a href="<?php bloginfo('home')?>">Prima pagina</a>		
 	</div>
 </div>
 

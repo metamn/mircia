@@ -1,6 +1,21 @@
 <?php
 
 
+
+// Query for multiple posts
+// - the query string has the syntax of the query_posts WP function
+function query_posts2($query_string) {
+  $q = new WP_Query($query_string);
+  return $q;
+}
+
+// Returns the content of a page
+// - $page is the page slug
+function page_content($page) {
+    $p = get_page_by_path($page);   
+    return $p->post_content;
+}
+
 // Get next or prev link for post
 function post_link($id) {
   $p = get_previous_post(true); 

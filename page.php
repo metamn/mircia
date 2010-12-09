@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-		<div id="page" class="column span-24 last">
+		<div id="page" class="column span-24 last content">
 			
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

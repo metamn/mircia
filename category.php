@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="category" class="column span-24 last">			
+		<div id="category" class="column span-24 last content">			
 			
 		  <?php get_template_part( 'loop', 'category' );?>
 			
