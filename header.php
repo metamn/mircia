@@ -23,9 +23,11 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/mircia.css" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'>
+
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -58,10 +60,10 @@
 	    foreach ($cats as $cat) {
 	      $c = get_category($cat); 
 	      $descr = $c->description; ?>	       
-	      <div id="category" class="column span-5 last">
-	        <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
+	      <div id="category" class="<?php echo $c->category_nicename; ?> column span-5 last">
 	        <?php get_cat_icon('cat='.$c->term_id); ?>
-	        <?php echo $c->name; ?>
+	        <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
+	          <?php echo $c->name; ?>
 	        </a>
 	      </div>
 	  <?php }?>

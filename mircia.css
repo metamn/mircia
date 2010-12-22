@@ -12,8 +12,6 @@ a:active, a:hover {
 }
 
 
-
-
 .container {
   margin: 0 auto;
   width: 950px;
@@ -23,10 +21,31 @@ a:active, a:hover {
 #header {
   margin-top: 1em;
 }
-
 #header #category, #category #thumb {
   width: 20%;
 }
+#header #category img {
+  width: 170px;
+  height: auto;
+  border: 1px solid #eee;
+}
+#header #category.xilogravura img {
+  margin-top: 98px;
+}
+#header #category.gravura-metal img {
+  margin-top: 105px;
+}
+#header #category.ilustratii img {
+  margin-top: 9px;
+}
+#header #category.desen-culoare img {
+  margin-top: 112px;
+}
+#header #category.sculptura img {
+
+}
+
+
 
 .content {
   margin: 5em 0 !important;
@@ -44,6 +63,19 @@ a:active, a:hover {
 #startpage #about .box {
   margin-left: .5em;
   background: none;
+}
+
+h1.logo {
+  font-family: 'OFL Sorts Mill Goudy TT', arial, serif; 
+  margin-left: .5em;
+}
+h1.logo .mircia {
+  font-size: 220%;  
+}
+h1.logo .dumi {
+  font-size: 120%;
+  position: relative;
+  top: -.4em;
 }
 
 

@@ -14,11 +14,7 @@
 
 <div id="footer" class="column span-24 last">
   <div class="alignleft">
-			&copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>
-  </div>
-  <div class="alignright">
-    <a href="<?php bloginfo('home')?>/despre-mircia" alt="Contact" title="Contact">Contact</a> &bull; 
-    <a href="<?php bloginfo('home')?>">Prima pagina</a>		
+			&copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>.
 	</div>
 </div>
 
