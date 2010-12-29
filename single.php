@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 <?php 
-  $cats = get_categories(); 
+  $cats = get_the_category(); 
   foreach ($cats as $cat) {
     $category = $cat;
     break;
