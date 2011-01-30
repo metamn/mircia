@@ -150,4 +150,15 @@ h1.logo .dumi {
 }
 
 
+/* Search
+*/
+#search-results #item {
+  width: 30%;
+  margin-right: 3%;
+  height: 18em;
+  margin-bottom: 1.25em;
+}
+
+
+
 
