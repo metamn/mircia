@@ -12,9 +12,11 @@
 ?>
 
 
-<div id="footer" class="column span-24 last">
-  <div class="alignleft">
-			&copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>.
+<div id="footer" class="block">
+  <div class="container">
+    <div class="alignleft">
+			  &copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>.
+	  </div>
 	</div>
 </div>
 
@@ -26,6 +28,5 @@
 
 	wp_footer();
 ?>
-</div> <!--container -->
 </body>
 </html>

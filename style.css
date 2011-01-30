@@ -9,12 +9,140 @@ Template: twentyten
 Tags: clean, portfolio, grid, jquery
 */
 
+/* Typography
 
-/* Blueprint */
-@import url(css/blueprint/src/reset.css);
-@import url(css/blueprint/src/liquid.css);
-@import url(css/blueprint/src/typography.css);
-@import url(css/blueprint/src/forms.css);
+- base measure for vertical rhythm: 1.25em
 
-/* Default theme styles */
-@import url(css/blueprint/screen.css );
+*/
+
+body { font-size:100%; line-height:1.25; }
+h1, h2, h3 { margin-top:0; margin-bottom:0; }
+h1 { font-size:1.55556em; padding:1.38415em 0; }
+h2 { font-size:1.33333em; padding:1.25em 0; }
+h3 { font-size:1.22222em; padding:1.42074em 0; }
+h4 { font-size:1.11111em; padding:1.62469em 0; }
+h5, h6 { font-size:1em; padding:1.25em 0; }
+h6 {
+  font-style: italic;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+body {   
+  font-size: 100%;
+  -webkit-text-size-adjust: none; 
+  font-family: "Helvetica Neue",Arial,Helvetica,sans-serif; 
+}
+p {
+  margin-bottom: 1.25em;
+}
+
+
+
+/* Grid
+*/
+
+.container {
+  width: 80%;
+  max-width: 80em;  /* 80x16px=1280px */
+  margin: 0 auto;
+}
+.col-1 {
+  width: 15%;
+  margin-right: 5%;
+}
+.col-2 {
+  width: 80%;  
+}
+
+
+/* Theme
+*/
+
+body {
+  background: #fff;
+  color: #222;
+}
+
+a, a:visited {
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+}
+a:active, a:hover {
+  color: #A10200;
+}
+
+
+#header {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+#header #item {
+  width: 15%;
+  margin-right: 5%;
+}
+#header #item img {
+  border: 1px solid #eee;
+  padding: .31em;
+}
+
+#footer {
+  margin-top: 3em;
+}
+
+
+
+
+/* Startpage
+*/
+
+
+#startpage #logo {
+  margin-left: 20%;
+  width: 70%;
+}
+
+h1.logo {
+  font-family: 'OFL Sorts Mill Goudy TT', arial, serif; 
+  padding-top: 0;
+}
+h1.logo .mircia {
+  font-size: 420%;  
+}
+h1.logo .dumi {
+  font-size: 220%;
+  position: relative;
+  top: -.4em;
+}
+#logo a, #logo a:visited {
+  color: #222;
+}
+
+
+
+/* Single
+*/
+.category-title {
+  word-wrap: break-word;
+  padding-right: 1em;
+  padding-top: 0;
+}
+
+.collection #items #item {
+  width: 40%;
+  margin-right: 10%;
+  font-size: small;
+  margin-bottom: 1.25em;
+}
+.collection #items #item img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #eee;
+  padding: .31em;
+}
+
+
+

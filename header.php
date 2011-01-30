@@ -24,15 +24,10 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/css/base.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_directory' ); ?>/mircia.css" />
 <link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'>
 
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script>!window.jQuery && document.write('<script src="/wp-includes/js/jquery/jquery.js"><\/script>')</script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery.init.js"></script>
 
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -52,21 +47,23 @@
 
 <body <?php body_class(); ?>>
 
-<div class="container">
-
-  <div id="header" class="column span-24 last">
-	  <?php 
-	    $cats = array(3, 4, 5, 6, 7);
-	    foreach ($cats as $cat) {
-	      $c = get_category($cat); 
-	      $descr = $c->description; ?>	       
-	      <div id="category" class="<?php echo $c->category_nicename; ?> column span-5 last">
-	        <?php get_cat_icon('cat='.$c->term_id); ?>
-	        <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
-	          <?php echo $c->name; ?>
-	        </a>
-	      </div>
-	  <?php }?>
-	</div>
+  <div id="header" class="block">
+    <div class="container">
+      <div id="items">
+        <?php 
+          $cats = array(3, 4, 5, 6, 7);
+          foreach ($cats as $cat) {
+            $c = get_category($cat); 
+            $descr = $c->description; ?>	       
+            <div id="item" class="<?php echo $c->category_nicename; ?> left">
+              <?php get_cat_icon('cat='.$c->term_id); ?>
+              <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
+                <?php echo $c->name; ?>
+              </a>
+            </div>
+        <?php }?>
+      </div>
+    </div>
+  </div>
 
 	
