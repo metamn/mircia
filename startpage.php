@@ -9,7 +9,7 @@
 ?>
 
 <div id="startpage" class="block">
-  <div class="container content">
+  <div class="container">
     <div id="logo" class="block">
       <a href="<?php bloginfo('home')?>">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.gif" alt="Despre <?php bloginfo('name')?>" title="Despre <?php bloginfo('name')?>" />
