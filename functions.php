@@ -17,12 +17,14 @@ function page_content($page) {
 }
 
 // Get next or prev link for post
-function post_link($id) {
-  $p = get_previous_post(true); 
-  if (!($p->guid)) {
-    $p = get_next_post(true);    
+function post_link($id, $cat) {
+  $post = get_previous_post(true); 
+  $link = $post->guid;
+  if ($post->ID == '') {
+    $posts = get_posts('numberposts=1&category='. $cat);
+    $link = get_permalink($posts[0]->ID);
   }
-  return $p->guid;		
+  return $link;		
 }
 
 // Get post image

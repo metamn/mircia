@@ -19,9 +19,9 @@ get_header(); ?>
 <div id="category" class="collection block">
   <div class="container">
     <div id="thumb" class="col-1 left">
-      <h1 class="category-title">
+      <h3 class="category-title">
         <?php echo $category->cat_name ?>
-      </h1>   
+      </h3>   
       <div id="items">
         <?php 
           if ($thumbs) {
@@ -29,11 +29,14 @@ get_header(); ?>
             while ($thumbs->have_posts()) : $thumbs->the_post(); update_post_caches($posts); 
               $i += 1; ?>
               <div id="item" class="left">
+                <div class="img">
                 <a href="<?php the_permalink(); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
                   <img src="<?php echo post_image($post->ID); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" />                                   
                 </a>
-                <br/>
-                <?php echo $i; ?>               
+                </div>
+                <div class="nr">
+                <?php echo $i; ?>
+                </div>               
               </div>
             <?php endwhile;
           }    
@@ -50,8 +53,8 @@ get_header(); ?>
         </div>
         
         <div id="info" class="block">   
-          <?php the_title(); ?>, 
-          <?php the_tags(); ?>      
+          <?php the_title(); ?>
+          <?php the_tags(' // '); ?>      
         </div>		  
       <?php 
       break;

@@ -15,8 +15,12 @@
 <div id="footer" class="block">
   <div class="container">
     <div class="alignleft">
-			  &copy; 2010 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>.
-	  </div>
+      <ul class="inline-list">
+	      <li>&copy; 2011 <a href="<?php bloginfo('home')?>" alt="Pagina principala" title="Pagina principala"><?php bloginfo('name')?></a>.</li>
+	      <li><a href="<?php bloginfo('home')?>/informatii" title="Informatii">Informatii</a>.</li>
+	      <li><a href="<?php bloginfo('home')?>/informatii/contact" title="Cautare">Cautare</a>.</li>
+	    </ul>			  
+	  </div>	
 	</div>
 </div>
 
