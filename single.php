@@ -52,7 +52,7 @@ get_header(); ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>    
         <div id="image" class="block">
           <a href="<?php echo post_link($post->ID, $category->term_id)?>">
-            <img src="<?php echo post_image($post->ID, 'large'); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) )?>" />
+            <img class="large" src="<?php echo post_image($post->ID, 'large'); ?>" title="<?php printf( the_title_attribute( 'echo=0' ) ); ?>" alt="<?php printf( the_title_attribute( 'echo=0' ) )?>" />
           </a>
         </div>
         

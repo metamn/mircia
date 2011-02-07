@@ -54,7 +54,7 @@
 
   <div id="header" class="block">
     <div class="container">
-      <div id="items">
+      <div id="items" class="menu">
         <?php 
           $cats = array(3, 4, 5, 6, 7);
           foreach ($cats as $cat) {
@@ -65,9 +65,15 @@
               <a href="<?php echo get_category_link($c->term_id)?>" alt="<?php echo $descr?>" title="<?php echo $descr?>">
                 <?php echo $c->name; ?>
               </a>
+              <?php if ($c->name == 'Xilogravura' ) { ?>
+                <div id="home">
+                  <a class="gray" href="<?php bloginfo('home') ?>" title="Prima pagina">Prima pagina</a>
+                </div>
+              <?php } ?>
             </div>
         <?php }?>
       </div>
+      
     </div>
   </div>
 

@@ -1,20 +1,14 @@
 <?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package WordPress
- * @subpackage Twenty_Ten
- * @since Twenty Ten 1.0
- */
+  /*
+  Template Name: Searchpage
+   * @package WordPress
+   * @subpackage Default_Theme
+   */
 
-get_header(); ?>
+  get_header();
+?>
 
-<div id="page" class="single block">		
+<div id="searchpage" class="single block">		
   <div class="container">
     <div id="info-menu" class="col-1 left">
       <ul>
@@ -37,6 +31,8 @@ get_header(); ?>
 	        </div><!-- .entry-content -->
 	      </div><!-- #post-## -->   
 	     <?php endwhile; ?>			
+	   
+	   <?php get_search_form(); ?>
 	   </div>
 	</div><!-- #container -->
 </div>
